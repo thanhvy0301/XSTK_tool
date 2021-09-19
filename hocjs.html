@@ -7,20 +7,14 @@
     <link rel="stylesheet" href="hocjs.css">    
     <script lang="javascript" src="hocjs.js"></script>    
     <title>Xác suất thống kê</title>
-   
-</head>
-<body >  
-    
-    <h2 style="font-family:Arial, Helvetica, sans-serif; text-align: center;"  >Công cụ tính xác xuất thống kê (Beta)</h2>     
-    <div style="display: flex;margin: 0px 0px 20px 0px ; justify-content:space-between; ">
+    <h2 style="font-family:Arial, Helvetica, sans-serif; text-align: center; "  >Công cụ tính xác xuất thống kê (Beta)</h2>     
+    <div class="time_mode">
         <div class="time">
             <h5 id="times" style="margin: 10px 5px;"></h5>
-            <h5 id="day" style="margin: 10px 5px;"></h5>                                       
+            <h5 id="day" style="margin: 5px 5px;"></h5>                                       
         </div>   
-        <button id="mode">Change mode </button>
-    </div>    
-   
-       
+        <button id="mode">Change mode</button>
+    </div>        
     <script>
         const today = new Date();
         var day = "DATE \n" + today.getDate() + "/" + today.getUTCMonth() + "/"+today.getUTCFullYear() ;
@@ -86,7 +80,9 @@
                     inputs[index].value = '';
            }
        }
-    </script>            
+    </script>
+</head>
+<body >  
     <div id="block">  
         <div class="border" id="box_1">
             <h4 style="margin-top: 0px;">Xác định giá trị</h4>
