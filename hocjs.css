@@ -110,7 +110,10 @@ input{
     background: rgb(245, 169, 27);   
     font-family:cursive;    
 }
-
+#clear{
+    background-color:rgba(139, 27, 27, 0.808); color: aliceblue; margin: 20px 0px 0px 10px;
+    cursor: pointer;
+}
 .border:hover{
     margin: 10px;    
 }    
