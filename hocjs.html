@@ -83,11 +83,11 @@
             <h4 style="margin-top: 0px;">Xác định giá trị</h4>
             <div>
                 <label> Max</label>
-                <input id="max" style="margin-left: 20px;" class="input"><p></p>
+                <input id="max" style="margin-left: 20px;" type="text" ><p></p>
             </div>    
             <div>
                 <label> Min</label>
-                <input id="min" style="margin-left: 25px;"class="input">    
+                <input id="min" style="margin-left: 25px;" type="text">    
             </div>      
             <button onclick="document.getElementById('resWidth').innerHTML = 'Round = \n'+maxMin() " id="btn_0" class="btn" style="margin-left: 120px;">Result</button>         
             <p id="resWidth" class="res"></p> 
@@ -97,11 +97,11 @@
             <h4 style="margin-top: 0px;">Class Width</h4>
             <div>
                 <label> Round</label>
-                <input id="round" style="margin-left: 70px;"class="input"><p></p>
+                <input id="round" style="margin-left: 70px;"  type="text"><p></p>
             </div>    
             <div>
                 <label> Number Class</label>
-                <input id="numClass" style="margin-left: 15px;"class="input" >    
+                <input id="numClass" style="margin-left: 15px;" type="text" >    
             </div>      
             <button onclick="document.getElementById('resClass').innerHTML = 'Class Width = \n'+classWidth()" id="btn_1" class="btn">Result</button>     
             <p id="resClass" class="res"></p>           
@@ -112,11 +112,11 @@
         <h4 style="margin-top: 0px;">Lower Class Limit</h4>
         <div>
             <label>Lower Class Limit</label>
-            <input id="lowCl" style="margin-left: 4px;"class="input"><p></p>
+            <input id="lowCl" style="margin-left: 4px;"  type="text"><p></p>
         </div>    
         <div>
             <label> Class Width</label>
-            <input id="clWidth"style="margin-left: 45px;"class="input">    
+            <input id="clWidth"style="margin-left: 45px;"  type="text">    
         </div>      
         <button onclick="document.getElementById('resLow').innerHTML = 'Lower Class Limit = \n'+lowCli()" id="btn_2" class="btn">Result</button>     
         <p id="resLow" class="res"></p>           
@@ -126,17 +126,17 @@
         <h4 style="margin-top: 0px;">Upper Class Limit</h4>
         <div>
             <label>Upper Class Limit</label>
-            <input id="upCl"class="input"class="input"><p></p>
+            <input id="upCl"class="input"  type="text"><p></p>
         </div>    
         <div>
             <label> Class Width</label>
-            <input id="clWi" style="margin-left: 40px;"class="input">    
+            <input id="clWi" style="margin-left: 40px;" type="text">    
         </div>      
         <button onclick="document.getElementById('resUp').innerHTML = 'Upper Class Limit = \n'+up()" id="btn_3" class="btn">Result</button>     
         <p id="resUp" class="res"></p>           
     </div><p></p>   
     
 </div>    
-<button onclick="clear()" id="clear">Clear All</button> 
+<button onclick="clearInput('ipE')" id="clear">Clear All</button> 
 </body>
 </html>

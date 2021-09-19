@@ -35,8 +35,21 @@ function up() {
     var sumCl = 0;
     return sumCl = upCl + clWi - 1;
 }
-function clear () {
-    document.getElementsByClassName('input').reset();
+function clearInput(ipE) {
+    var del = document.getElementsById(ipE);
+    for(i = 0; i<del.node.length; i++){
+        var child = del.node[i].first;
+        if(child){
+            switch (child.type) {
+                case 'input':
+                    
+                    break;
+            
+                default:
+                    break;
+            }
+        }
+    }
 }
   
 
