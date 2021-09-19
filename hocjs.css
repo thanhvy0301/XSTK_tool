@@ -18,7 +18,7 @@ body{
 }
 .border{    
     width: 350px;
-    min-height: 250px;
+    min-height: 220px;
     height: 230px;    
     border-radius: var(--border-rad);
     padding:20px 20px 0 ;    
