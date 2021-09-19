@@ -1,13 +1,7 @@
 //Hàm tính nhiệt độ
 function cel(a) {
     return a - 32;
-}
-function sum() {   
-     var x = 0;
-      x = document.getElementById('txt').value; //Get value from id of text box
-      x=parseFloat(x); //Convert string to number
-     return x *= Math.PI;     //return result
- }         
+}         
  function maxMin() { //hàm tính Class Width
      var x = document.getElementById('max').value;
      var y = document.getElementById('min').value;
