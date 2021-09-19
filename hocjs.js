@@ -42,10 +42,7 @@ function clearInput(ipE) {
         if(child){
             switch (child.type) {
                 case 'input':
-                    
-                    break;
-            
-                default:
+                    child.value= '';
                     break;
             }
         }
