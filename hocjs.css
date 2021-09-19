@@ -58,7 +58,7 @@ input{
 #clWidth{
     margin-left: 41px;
 }
-.contain{
+#block{
     display:flex;      
     justify-content: center; 
     justify-content:space-around; 
@@ -111,12 +111,9 @@ input{
     font-family:cursive;    
 }
 #clear{
-    background-color:rgba(139, 27, 27, 0.808); color: aliceblue; margin: 20px 0px 0px 10px;
+    background-color:rgba(139, 27, 27, 0.808); color: aliceblue; margin: 0px 0px 0px 50px;
     cursor: pointer;
 }
-.border:hover{
-    margin: 10px;    
-}    
 #mode {background-image: linear-gradient(to right, #485563 0%, #29323c  51%, #c4cad1  100%)}
 #mode {
     margin-right: 30px;
@@ -139,3 +136,13 @@ input{
        color: #fff;
        text-decoration: none;
 }    
+#btnClear{
+    margin: 20px 20px 0px 10px  ;
+    max-width: 200px;
+    max-height: 30px;
+    width: 100px;
+    height: 50px;
+    float: right;
+    border-radius: 0%;
+    cursor: pointer;
+}

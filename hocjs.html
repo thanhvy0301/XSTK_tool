@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="hocjs.css">
-    <script lang="javascript" src="hocjs.js"></script>
+    <link rel="stylesheet" href="hocjs.css">    
+    <script lang="javascript" src="hocjs.js"></script>    
     <title>Xác suất thống kê</title>
    
 </head>
@@ -76,9 +76,18 @@
         // Set our currents theme to the new one
         document.documentElement.setAttribute("data-theme", switchToTheme);
         }
-  });
-    </script>        
-<div  class="contain">
+  });    
+  function clearFields(fieldid) {
+           var container, inputs, index;   
+           container = document.getElementById(fieldid);
+           inputs = container.getElementsByTagName('input');
+           for (index = 0; index < inputs.length; ++index) {
+               if(inputs[index].type =="text")
+                    inputs[index].value = '';
+           }
+       }
+    </script>            
+    <div id="block">  
         <div class="border" id="box_1">
             <h4 style="margin-top: 0px;">Xác định giá trị</h4>
             <div>
@@ -133,10 +142,9 @@
             <input id="clWi" style="margin-left: 40px;" type="text">    
         </div>      
         <button onclick="document.getElementById('resUp').innerHTML = 'Upper Class Limit = \n'+up()" id="btn_3" class="btn">Result</button>     
-        <p id="resUp" class="res"></p>           
-    </div><p></p>   
-    
+        <p id="resUp" class="res"></p>    
+    </div><p></p> 
 </div>    
-<button onclick="clearInput('contain')">Clear All</button> 
+<input type="button" onclick="clearFields('block')" value="Clear All" id="btnClear">
 </body>
 </html>

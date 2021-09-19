@@ -35,20 +35,14 @@ function up() {
     var sumCl = 0;
     return sumCl = upCl + clWi - 1;
 }
-function clearInput(ipE) {
-    var del = document.getElementsById(ipE);
-    for(i = 0; i<del.node.length; i++){
-        var child = del.node[i].first;
-        if(child){
-            switch (child.type) {
-                case 'input':
-                    child.value= '';
-                    break;
-            }
-        }
-    }
+    function clearFields(fieldid) {
+    var container, inputs, index;  
+    container = document.getElementById(fieldid);
+    inputs = container.getElementsByTagName('input');   
+    for (index = 0; index < inputs.length; ++index) {        
+        if(inputs[index].type='input');
+            inputs[index].value = '';             
+            
+    }  
 }
-  
 
-    
- 
