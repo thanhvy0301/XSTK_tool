@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="hocjs.css">    
-    <script lang="javascript" src="hocjs.js"></script>    
+    <script lang="javascript" src="hocjs.js"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <title>Xác suất thống kê</title>
     <h2 style="font-family:Arial, Helvetica, sans-serif; text-align: center; "  >Công cụ tính xác xuất thống kê (Beta)</h2>     
     <div class="time_mode">
@@ -16,6 +17,12 @@
         <button id="mode">Change mode</button>
     </div>        
     <script>
+        $(document).ready(function(){
+            $("#btnClear").click(function(){
+                $(".res").remove();
+                window.open("hocjs.html",'_parent');              
+    });
+});
         const today = new Date();
         var day = "DATE \n" + today.getDate() + "/" + today.getUTCMonth() + "/"+today.getUTCFullYear() ;
         var time = "TIME \n" + today.getHours()+" : "+today.getMinutes();
@@ -71,7 +78,7 @@
         document.documentElement.setAttribute("data-theme", switchToTheme);
         }
   });    
-  function clearFields(fieldid) {
+function clearFields(fieldid) {
            var container, inputs, index;   
            container = document.getElementById(fieldid);
            inputs = container.getElementsByTagName('input');
@@ -79,10 +86,10 @@
                if(inputs[index].type =="text")
                     inputs[index].value = '';
            }
-       }
-    </script>
+}
+</script>
 </head>
-<body >  
+<body >     
     <div id="block">  
         <div class="border" id="box_1">
             <h4 style="margin-top: 0px;">Xác định giá trị</h4>
@@ -141,6 +148,7 @@
         <p id="resUp" class="res"></p>    
     </div><p></p> 
 </div>    
-<input type="button" onclick="clearFields('block')" value="Clear All" id="btnClear">
+<button id="btnClear" onclick="clearFields('block')">Clear All</button>
+
 </body>
 </html>

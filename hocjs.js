@@ -35,14 +35,4 @@ function up() {
     var sumCl = 0;
     return sumCl = upCl + clWi - 1;
 }
-    function clearFields(fieldid) {
-    var container, inputs, index;  
-    container = document.getElementById(fieldid);
-    inputs = container.getElementsByTagName('input');   
-    for (index = 0; index < inputs.length; ++index) {        
-        if(inputs[index].type='input');
-            inputs[index].value = '';             
-            
-    }  
-}
 
