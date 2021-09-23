@@ -129,10 +129,15 @@ function clearFields(fieldid) {
         <div class="lbl_inp">
             <label> Class Width</label>
             <input id="clWidth"style="margin-left: 45px;width: 156px;"  type="text">    
-        </div>      
-        <button onclick="document.getElementById('resLow').innerHTML = 'Lower Class Limit = \n'+lowCli()" id="btn_2" class="btn">Result</button>     
+        </div>   
+     <p></p>    
+    <div class="lbl_inp">
+        <label> Number Class</label>
+        <input id="numClass" type="text" style="margin-left: 30px;width: 156px;" >    
+    </div> <p></p>    
+        <button onclick="document.getElementById('resLow').innerHTML = 'Lower Cli = \n'+lowCli() + (ast())" id="btn_2" class="btn">Result</button>     
         <p id="resLow" class="res"></p>           
-    </div>   <p></p>
+    </div><p></p>
     <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->   
     <div class="border" >        
         <h4 style="margin-top: 0px;">Upper Class Limit</h4>
@@ -149,5 +154,11 @@ function clearFields(fieldid) {
     </div><p></p> 
 </div>    
 <button id="btnClear" onclick="clearFields('block')">Clear All</button>
+<p id="kq"></p>
+<div>
+
+
+    
+</div>
 </body>
 </html>

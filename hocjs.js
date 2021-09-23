@@ -33,6 +33,38 @@ function up() {
     upCl = parseFloat(upCl);
     clWi  = parseFloat(clWi);
     var sumCl = 0;
-    return sumCl = upCl + clWi - 1;
+    return sumCl = upCl + clWi - 0.1;
 }
-
+var val = 7.5;
+for (let i = 0; i < 6; i++) { //chạy vòng lặp 5 lần
+        var k = val +4.9;  
+        [k,val] = [val,k];   // hoán đổi 2 giá trị
+        console.log("kq = "+k );   //
+}
+function as() {
+    var clW = document.getElementById('resLow').value;
+    var numCl = document.getElementById('numCl').value;
+    var numClass = document.getElementById('numClass').value;
+   for(let i=0; i <=numCl;i++ ) 
+   {
+       var r = clW + numClass;
+       [r,clW] = [clW,r];
+       document.write("Kq = "+r);       
+   }
+}
+function ast() {
+    var r = 0;
+    var lowCl = document.getElementById('lowCl').value;   //Class Limit
+    var clWidth = document.getElementById('clWidth').value; //ClassWidth
+    var numClass = document.getElementById('numClass').value; // Num Class
+    lowCl = parseFloat(lowCl);
+    clWidth = parseFloat(clWidth);
+    numClass = parseFloat(numClass);        
+    for(let i=0; i <= numClass ;i++ ) 
+    {
+        r = clWidth + lowCl;
+        [r,lowCl] = [lowCl,r];                   
+        //document.getElementById('kq').innerHTML = r;   
+        console.log(document.getElementById("kq").innerHTML = r);             
+    }     
+}   
