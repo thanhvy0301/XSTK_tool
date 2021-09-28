@@ -22,7 +22,7 @@
                 $(".res").remove();
                 window.open("hocjs.html",'_parent');              
     });
-});
+});       
         const today = new Date();
         var day = "DATE \n" + today.getDate() + "/" + today.getUTCMonth() + "/"+today.getUTCFullYear() ;
         var time = "TIME \n" + today.getHours()+" : "+today.getMinutes();
@@ -115,7 +115,7 @@ function clearFields(fieldid) {
                 <label> Number Class</label>
                 <input id="numClass" style="margin-left: 25px;width: 155px;" type="text" >    
             </div>      
-            <button onclick="document.getElementById('resClass').innerHTML = 'Class Width = \n'+classWidth()" id="btn_1" class="btn">Result</button>     
+            <button onclick="document.getElementById('resClass').innerHTML = 'Class Width = \n'+classWidth()" class="btn">Result</button>     
             <p id="resClass" class="res"></p>           
         </div>                  
    <p></p>
@@ -130,12 +130,12 @@ function clearFields(fieldid) {
             <label> Class Width</label>
             <input id="clWidth"style="margin-left: 45px;width: 156px;"  type="text">    
         </div>   
-     <p></p>    
-    <div class="lbl_inp">
+     <!-- <p></p>     -->
+    <!-- <div class="lbl_inp">
         <label> Number Class</label>
-        <input id="numClass" type="text" style="margin-left: 30px;width: 156px;" >    
-    </div> <p></p>    
-        <button onclick="document.getElementById('resLow').innerHTML = 'Lower Cli = \n'+lowCli() + (ast())" id="btn_2" class="btn">Result</button>     
+        <input id="numClass" type="text" style="margin-left: 28px;width: 156px;" >    
+    </div> <p></p>     -->
+        <button onclick="document.getElementById('resLow').innerHTML = 'Lower Class Limit = \n'+lowCli()" class="btn" >Result</button>     
         <p id="resLow" class="res"></p>           
     </div><p></p>
     <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->   
@@ -148,17 +148,34 @@ function clearFields(fieldid) {
         <div class="lbl_inp">
             <label> Class Width</label>
             <input id="clWi" style="margin-left: 45px; width: 155px;"type="text">    
-        </div>      
-        <button onclick="document.getElementById('resUp').innerHTML = 'Upper Class Limit = \n'+up()" id="btn_3" class="btn">Result</button>     
+        </div>
+        <!-- <div class="lbl_inp">
+            <label> Class Width</label>
+            <input id="clWi" style="margin-left: 45px; width: 155px;"type="text">    
+        </div> -->
+        <button onclick="document.getElementById('resUp').innerHTML = 'Upper Class Limit = \n'+up()" class="btn">Result</button>     
         <p id="resUp" class="res"></p>    
     </div><p></p> 
+    <div class="border" id="bd">        
+        <h4 style="margin-top: 0px;">Lower Class Boundaries</h4>
+        <div class="lbl_inp" style="margin-left: 20px;">
+            <label>Lower CB</label>
+            <input id="cb" style="margin-left: 4px; width: 155px;"type="text">
+            <button onclick="document.getElementById('resLowCB').innerHTML = 'Lower CB= \n'+CB()" class="btn" id="CB">CB</button> 
+            <p id="resLowCB" class="res" style="margin: 0px;"></p>  
+        </div>                      
+                        
+        <div class="lbl_inp" style="margin-left: 20px;">
+            <label>Upper CB</label>
+            <input id="ucb" style="margin-left: 4px; width: 155px;"type="text">
+            <button onclick="document.getElementById('resUCB').innerHTML = 'Lower CB= \n'+UCB()" class="btn" id="CB">CB</button>  
+            <p id="resUCB" class="res" style="margin: 0px;"></p>    
+        </div>               
+    </div>
 </div>    
 <button id="btnClear" onclick="clearFields('block')">Clear All</button>
 <p id="kq"></p>
-<div>
-
-
-    
+<div>    
 </div>
 </body>
 </html>

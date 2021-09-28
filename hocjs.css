@@ -7,7 +7,7 @@
 body{
     background-color: var(--background-color);
     color: var(--text-color);   
-    min-width: 345px; 
+    min-width: 340px; 
     height: 1000px;
     max-height: 1000px;
 }
@@ -21,7 +21,7 @@ body{
 .border{    
     width: 350px;
     min-height: 250px;
-    height: 300px;    
+    height: 260px;    
     border-radius: var(--border-rad);
     padding:20px 20px 0 ;    
     background-color: rgb(60, 88, 139);
@@ -89,6 +89,17 @@ input{
     border-radius: 5px;    
     box-sizing: border-box;    
 }
+#bd{
+    width: 400px;  
+    min-width: 300px;  
+}
+#CB{
+    margin-left: 0px;
+}
+#bd{
+    margin-top: 20px;
+    height: 100px;
+}
 .btn:hover{
     background-color: rgb(8, 44, 121);
     transition: background 0.5s ease;    
@@ -96,7 +107,7 @@ input{
 #border{       
     max-height: 1000px;
     width: 280px;
-    height: 180px;
+    height: 150px;
     border: solid 1px black;
     border-radius: var(--border-rad);
     padding:20px 20px 0 ;    
@@ -158,7 +169,4 @@ input{
     float: right;
     border-radius: 0%;
     cursor: pointer;
-}
-#btn_2{
-    margin-top: 0px;
 }
