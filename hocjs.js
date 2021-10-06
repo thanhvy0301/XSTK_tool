@@ -35,8 +35,8 @@ function up() {
     var sumCl = 0;
     return sumCl = upCl + clWi - 0.1;
 }
-/*
-function as() {
+
+/*function as() {
     var clW = document.getElementById('resLow').value;
     var numCl = document.getElementById('numCl').value;
     var numClass = document.getElementById('numClass').value;

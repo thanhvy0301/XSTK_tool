@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="hocjs.css">    
     <script lang="javascript" src="hocjs.js"></script>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <title>Xác suất thống kê</title>
     <h2 style="font-family:Arial, Helvetica, sans-serif; text-align: center; "  >Công cụ tính xác xuất thống kê (Beta)</h2>     
     <div class="time_mode">
@@ -156,26 +157,39 @@ function clearFields(fieldid) {
         <button onclick="document.getElementById('resUp').innerHTML = 'Upper Class Limit = \n'+up()" class="btn">Result</button>     
         <p id="resUp" class="res"></p>    
     </div><p></p> 
-    <div class="border" id="bd">        
+    
+    <div class="border" id="bd" style="margin-right: 75px;">        
         <h4 style="margin-top: 0px;">Lower Class Boundaries</h4>
         <div class="lbl_inp" style="margin-left: 20px;">
             <label>Lower CB</label>
             <input id="cb" style="margin-left: 4px; width: 155px;"type="text">
             <button onclick="document.getElementById('resLowCB').innerHTML = 'Lower CB= \n'+CB()" class="btn" id="CB">CB</button> 
-            <p id="resLowCB" class="res" style="margin: 0px;"></p>  
+            <p id="resLowCB" class="res" style="margin: 0px;padding-right: 30px;"></p>  
         </div>                      
                         
         <div class="lbl_inp" style="margin-left: 20px;">
             <label>Upper CB</label>
             <input id="ucb" style="margin-left: 4px; width: 155px;"type="text">
             <button onclick="document.getElementById('resUCB').innerHTML = 'Lower CB= \n'+UCB()" class="btn" id="CB">CB</button>  
-            <p id="resUCB" class="res" style="margin: 0px;"></p>    
-        </div>               
+            <p id="resUCB" class="res" style="margin: 0px; padding-right: 30px;"></p>    
+        </div>    
+               
     </div>
+    <button id="btnClear" onclick="clearFields('block')">Clear All</button>   
 </div>    
-<button id="btnClear" onclick="clearFields('block')">Clear All</button>
-<p id="kq"></p>
+
+<div id="kq_div"><p id="kq" style=" width: 30px;"></p></div>
 <div>    
 </div>
+<footer style="margin-right: 0px; margin-left: 0px; height: 100px;">
+    <p style="padding-top: 25px; color: white;" >Bản quyền thuộc về ĐNTV</p>
+    <div style=" justify-content:center; display: flex; letter-spacing: 10px;" >
+       <a href="https://dntv2k1.wordpress.com/" target="_blank" style="color: white;"><i class="fab fa-wordpress"></i></a>
+       <a href="mailto: doanngocthanhvy@gmail.com" target="_blank" style="color: white;"><i class="fas fa-at"></i></a>
+       <a href="https://www.facebook.com/thanhvy03012001/"target="_blank" style="color: white;"><i class="fab fa-facebook"></i></a>
+    </div>
+    
+</footer>
 </body>
+
 </html>

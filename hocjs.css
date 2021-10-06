@@ -8,8 +8,20 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);   
     min-width: 340px; 
-    height: 1000px;
-    max-height: 1000px;
+    height: auto; 
+    margin-bottom: 0px ;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: flex-end;
+    
+}
+footer{
+    min-height: 60px;
+    height: 50px;
+    min-width: 340px;
+    background-color: rgb(9, 0, 32);
+    /* color: yellow; */
+
 }
 [data-theme="dark"] {
     --background-color: #2c2c2c;
@@ -66,13 +78,10 @@ input{
 }
 #block{
     display:flex;           
-    justify-content:space-around; 
+    justify-content:space-between; 
     flex-direction:row;
     flex-wrap: wrap;
-    /*align-content: flex-end;    */
-    width: 100%;   
-    align-content: space-around   ;
-    margin-left: 7px;
+    margin-left: 10px;
 }
 .btn{    
     height: 30px;
@@ -89,10 +98,10 @@ input{
     border-radius: 5px;    
     box-sizing: border-box;    
 }
-#bd{
+/* #bd{
     width: 400px;  
-    min-width: 300px;  
-}
+    min-width: 380px;  
+} */
 #CB{
     margin-left: 0px;
 }
@@ -153,6 +162,7 @@ input{
         width: 120px;
         padding-top: 3px;
         cursor: pointer;
+        margin-right: 12px;
 
      }
 #mode:hover {
@@ -161,12 +171,13 @@ input{
        text-decoration: none;
 }    
 #btnClear{
-    margin: 20px 20px 0px 10px  ;
-    max-width: 200px;
+    min-width: 40px;
     max-height: 30px;
     width: 100px;
     height: 50px;
-    float: right;
     border-radius: 0%;
     cursor: pointer;
+    float: right;
+    margin-top: 250px;
+    margin-right: 10px;
 }
