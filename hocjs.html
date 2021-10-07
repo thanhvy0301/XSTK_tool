@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="hocjs.css">    
-    <script lang="javascript" src="hocjs.js"></script>   
+    <script lang="javascript" src="hocjs.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <title>Xác suất thống kê</title>
@@ -91,6 +91,7 @@ function clearFields(fieldid) {
 </script>
 </head>
 <body >     
+    
     <div id="block">  
         <div class="border" id="box_1">
             <h4 style="margin-top: 0px;">Xác định giá trị</h4>
@@ -131,11 +132,7 @@ function clearFields(fieldid) {
             <label> Class Width</label>
             <input id="clWidth"style="margin-left: 45px;width: 156px;"  type="text">    
         </div>   
-     <!-- <p></p>     -->
-    <!-- <div class="lbl_inp">
-        <label> Number Class</label>
-        <input id="numClass" type="text" style="margin-left: 28px;width: 156px;" >    
-    </div> <p></p>     -->
+     
         <button onclick="document.getElementById('resLow').innerHTML = 'Lower Class Limit = \n'+lowCli()" class="btn" >Result</button>     
         <p id="resLow" class="res"></p>           
     </div><p></p>
@@ -150,24 +147,21 @@ function clearFields(fieldid) {
             <label> Class Width</label>
             <input id="clWi" style="margin-left: 45px; width: 155px;"type="text">    
         </div>
-        <!-- <div class="lbl_inp">
-            <label> Class Width</label>
-            <input id="clWi" style="margin-left: 45px; width: 155px;"type="text">    
-        </div> -->
+       
         <button onclick="document.getElementById('resUp').innerHTML = 'Upper Class Limit = \n'+up()" class="btn">Result</button>     
         <p id="resUp" class="res"></p>    
     </div><p></p> 
-    
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->   
     <div class="border" id="bd" style="margin-right: 75px;">        
         <h4 style="margin-top: 0px;">Lower Class Boundaries</h4>
-        <div class="lbl_inp" style="margin-left: 20px;">
+        <div class="lbl_inp" style="justify-content: center;">
             <label>Lower CB</label>
             <input id="cb" style="margin-left: 4px; width: 155px;"type="text">
             <button onclick="document.getElementById('resLowCB').innerHTML = 'Lower CB= \n'+CB()" class="btn" id="CB">CB</button> 
             <p id="resLowCB" class="res" style="margin: 0px;padding-right: 30px;"></p>  
         </div>                      
                         
-        <div class="lbl_inp" style="margin-left: 20px;">
+        <div class="lbl_inp" style="justify-content: center;">
             <label>Upper CB</label>
             <input id="ucb" style="margin-left: 4px; width: 155px;"type="text">
             <button onclick="document.getElementById('resUCB').innerHTML = 'Lower CB= \n'+UCB()" class="btn" id="CB">CB</button>  
