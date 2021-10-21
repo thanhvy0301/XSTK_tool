@@ -8,15 +8,16 @@
     <script lang="javascript" src="hocjs.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
     <title>Xác suất thống kê</title>
-    <h2 style="font-family:Arial, Helvetica, sans-serif; text-align: center; "  >Công cụ tính xác xuất thống kê (Beta)</h2>     
-    <div class="time_mode">
+    <h2 style="font-family:Arial, Helvetica, sans-serif; text-align: center; padding-top: 10px;"  >CÔNG CỤ ONLINE (BETA)</h2>     
+    <!-- <div class="time_mode">
         <div class="time">
             <h5 id="times" style="margin: 10px 5px;"></h5>
             <h5 id="day" style="margin: 5px 5px;"></h5>                                       
         </div>   
         <button id="mode">Change mode</button>
-    </div>        
+    </div>         -->
     <script>
         $(document).ready(function(){
             $("#btnClear").click(function(){
@@ -91,7 +92,13 @@ function clearFields(fieldid) {
 </script>
 </head>
 <body >     
-    
+    <div class="navbar">
+        <ul class="ul-nav">
+            <li class="li-nav">Trang chủ</li>
+            <li  class="li-nav" id="li-2"><a href="hocjs.html"></a>Biểu diễn dữ liệu</li>
+            <li class="li-nav"><a href="veTG.html"></a>Về tác giả</li>
+        </ul>
+    </div>
     <div id="block">  
         <div class="border" id="box_1">
             <h4 style="margin-top: 0px;">Xác định giá trị</h4>
@@ -152,7 +159,7 @@ function clearFields(fieldid) {
         <p id="resUp" class="res"></p>    
     </div><p></p> 
     <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->   
-    <div class="border" id="bd" style="margin-right: 75px;">        
+    <div class="border" id="bd">        
         <h4 style="margin-top: 0px;">Lower Class Boundaries</h4>
         <div class="lbl_inp" style="justify-content: center;">
             <label>Lower CB</label>

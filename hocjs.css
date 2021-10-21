@@ -1,25 +1,27 @@
 :root{    
     --border-rad:10px;
     --cursor:pointer;
-    --background-color:#E8E8E8;
+    --background-color:#D4ECDD;
     --text-color:#000;
+    --min-width:330px;
 }
 body{
     background-color: var(--background-color);
     color: var(--text-color);   
-    min-width: 340px; 
+    min-width: var(--min-width); 
     height: auto; 
-    margin-bottom: 0px ;
+    /*margin-bottom: 0px ;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 0px;*/
     justify-content: flex-end;
+    margin: 0px;
     
 }
 footer{
     min-height: 60px;
     height: 50px;
-    min-width: 340px;
-    background-color: rgb(9, 0, 32);
+    min-width: 355px;
+    background-color: #112031;
     /* color: yellow; */
 
 }
@@ -28,15 +30,48 @@ footer{
     --text-color: #fff;
   }
 .lbl_inp{
-    min-width: 340px;
+    min-width: var(--min-width);
+}
+/* .navbar{
+    box-sizing: border-box;
+    height: 50px;
+    min-width: 300px;
+    font-family: sans-serif;
+    padding-top: 10px; }*/
+
+.ul-nav{
+    font-family: sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    letter-spacing: 2px;
+    
+}
+.li-nav{
+    width: 180px;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    border-radius: 22px;
+}
+.li-nav:hover{
+    background-position: right;
+    background: linear-gradient(to left, #112031 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    color: white;
 }
 .border{    
-    width: 350px;
-    min-height: 250px;
-    height: 260px;    
+    width: 340px;
+    min-height: 230px;
+    height: 200px;    
     border-radius: var(--border-rad);
     padding:20px 20px 0 ;    
-    background-color: rgb(60, 88, 139);
+    background-color: #345B63;
     color: rgb(236, 236, 232);
     box-shadow: #6e80cfa2 2px 0px 5px 2px;
     transition: 1s;
@@ -77,11 +112,11 @@ input{
     margin-left: 41px;
 }
 #block{
-    display:flex;           
-    justify-content:space-between; 
-    flex-direction:row;
+    display:flex;       
+    justify-content:space-around; 
     flex-wrap: wrap;
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-top: 30px;
 }
 .btn{    
     height: 30px;
@@ -107,6 +142,7 @@ input{
 }
 #bd{
     margin-top: 20px;
+    margin-right: 1015px;
     height: 100px;
 }
 .btn:hover{
@@ -180,4 +216,6 @@ input{
     float: right;
     margin-top: 250px;
     margin-right: 10px;
+    background-color: #112031;
+    color: whitesmoke;
 }
