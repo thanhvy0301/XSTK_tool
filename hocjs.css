@@ -51,12 +51,16 @@ footer{
     letter-spacing: 2px;
     
 }
+a{
+    color: inherit;
+}
 .li-nav{
     width: 180px;
     text-align: center;
     height: 30px;
     padding-top: 10px;
     border-radius: 22px;
+    
 }
 .li-nav:hover{
     background-position: right;
@@ -218,4 +222,13 @@ input{
     margin-right: 10px;
     background-color: #112031;
     color: whitesmoke;
+}
+.profile{
+    width: 70%;
+    height: 600px;
+    /*border: solid 1px black;*/
+    box-sizing: border-box;
+    margin-left: 250px;
+    background-color: hsla(0, 7%, 94%, 0.904);
+    display: flex;
 }

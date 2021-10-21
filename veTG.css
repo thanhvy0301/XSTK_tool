@@ -1,0 +1,38 @@
+footer{
+    min-height: 60px;
+    height: 50px;
+    min-width: 355px;
+    background-color: #112031;
+    /* color: yellow; */
+
+}
+.ul-nav{
+    font-family: sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    letter-spacing: 2px;
+    
+}
+a{
+    color: inherit;
+}
+.li-nav{
+    width: 180px;
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    border-radius: 22px;
+    
+}
+.li-nav:hover{
+    background-position: right;
+    background: linear-gradient(to left, #112031 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    color: white;
+}
