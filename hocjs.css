@@ -215,12 +215,12 @@ input{
     max-height: 30px;
     width: 100px;
     height: 50px;
-    border-radius: 0%;
+    border-radius: 10px;
     cursor: pointer;
     float: right;
     margin-top: 250px;
     margin-right: 10px;
-    background-color: #112031;
+    background-color:#CF0000;
     color: whitesmoke;
 }
 .profile{
